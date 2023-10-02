@@ -53,7 +53,7 @@ website is built using ExpressJS, with EJS as the templating engine.
 - Although not fully functional, the form captures user information and
   redirects them to the Home Page.
 
----
+
 ## Technologies Used
 
 In the construction of this portfolio website, various technologies
@@ -113,7 +113,7 @@ Through the integration of these technologies, the portfolio website stands as a
 testament to technical proficiency and a commitment to high-quality web 
 development standards.
 
----
+
 ## Final Remarks
 
 All aspects of the assignment have been addressed, ensuring a comprehensive and
