@@ -17,12 +17,17 @@
  */
 import express, {Router} from "express";
 import {NextFunction, Request, RequestHandler, Response} from "express-serve-static-core";
+import { marked } from "marked";
+import outdent from "outdent";
 
 /**
  * Create the main router object.
  */
 const router: Router = express.Router();
 
+const markedWithOutdent = (text: TemplateStringsArray) => {
+    return marked.parse(outdent(text));
+}
 /**
  * This is a helper function that wraps the res.render() function call to render the appropriate
  * view template. It is used as the RequestHandler for each route.
@@ -33,7 +38,7 @@ const router: Router = express.Router();
  */
 function handler(view: string, option: any = {}): RequestHandler {
     return (req: Request, res: Response, next: NextFunction) => {
-        res.render(view, { path: req.path, ...option });
+        res.render(view, { marked: markedWithOutdent, path: req.path, ...option });
     }
 }
 

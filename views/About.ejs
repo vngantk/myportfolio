@@ -8,14 +8,14 @@ File: About.ejs
 %>
 <%- include('partials/header'); %>
 <div class="container my-4">
-    <md-block>
+    <%- marked `
         # About Me
-    </md-block>
+    ` %>
     <div class="m-2">
         <img src="./images/VN_Photo.jpeg" alt="Vincent Ngan" width="120" height="120" class="rounded-circle my-1">
         <p style="width: 120px; text-align: center">Vincent Ngan</p>
     </div>
-    <md-block>
+    <%- marked`
         ---
         ## Summary
         With over decades of enriched experience in software development, I am a seasoned Software Engineer,
@@ -67,6 +67,7 @@ File: About.ejs
         ---
 
         [Back to Home](/)
-    </md-block>
+    `
+    %>
 </div>
 <%- include('partials/footer'); %>

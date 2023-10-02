@@ -12,7 +12,7 @@ File: Home.ejs
         <img src="./images/VN_Photo.jpeg" alt="Vincent Ngan" width="240" height="240" class="rounded-circle my-2">
         <p style="width: 240px; text-align: center">Vincent Ngan</p>
     </div>
-    <md-block>
+    <%- marked `
         ---
         ## Innovation Beyond Boundaries
         I'm Vincent Ngan, a passionate and dedicated Software Developer based in Toronto.
@@ -22,6 +22,7 @@ File: Home.ejs
         enhancing their online experience and fostering meaningful connections.
 
         *Let's create something amazing together!*
-    </md-block>
+        `
+    %>
 </div>
 <%- include('partials/footer'); %>

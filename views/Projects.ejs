@@ -6,8 +6,8 @@ Date: 2023-10-01
 File: Projects.ejs
 %>
 <%- include('partials/header'); %>
-<div class="container mt-4">
-    <md-block>
+<div class="container my-4">
+    <%- marked `
         # Project Showcase
         Welcome to my project showcase! These are some of the projects I have worked on. They are a testament to my
         passion for technology and my dedication to creating innovative solutions that address real-world challenges.
@@ -54,6 +54,6 @@ File: Projects.ejs
         ---
 
         [Back to Home](/)
-    </md-block>
+    `%>
 </div>
 <%- include('partials/footer'); %>

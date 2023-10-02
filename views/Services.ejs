@@ -7,7 +7,7 @@ File: Services.ejs
 %>
 <%- include('partials/header'); %>
 <div class="container my-4">
-    <md-block>
+    <%- marked `
         # Professional Services
         I offer a wide range of professional services to ensure the success and efficiency of your projects.
         They include the following major areas.
@@ -43,7 +43,6 @@ File: Services.ejs
 
         [Back to Home](/)
 
-    </md-block>
-
+    `%>
 </div>
 <%- include('partials/footer'); %>

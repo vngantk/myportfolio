@@ -8,7 +8,7 @@ File: Contact.ejs
 %>
 <%- include('partials/header'); %>
 <div class="container my-4">
-    <md-block>
+    <%- marked `
         # Contact Me
 
         I'm excited to hear from you! Whether it's a new project, questions about the services I offer, or anything
@@ -34,6 +34,6 @@ File: Contact.ejs
         ---
 
         [Back to Home](/)
-    </md-block>
+    `%>
 </div>
 <%- include('partials/footer'); %>

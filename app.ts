@@ -28,7 +28,6 @@ import indexRouter from "./routes/index";
 
 const app = express();
 
-
 // Set up views engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -39,7 +38,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // Set up static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use("/", express.static(path.join(__dirname, 'public')));
+app.use("/scripts", express.static(path.join(__dirname, 'node_modules')));
 
 // Set up the main routing controller
 app.use(indexRouter);
