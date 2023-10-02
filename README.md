@@ -6,46 +6,46 @@ This repository contains the code for my Personal Portfolio Website, an
 assignment for my course. The
 website is built using ExpressJS, with EJS as the templating engine.
 
-## Features and Completion
+## Features
 
-### Navigation Bar (Completed)
+### Navigation Bar
 
 - The site includes a consistent navigation bar, allowing users to easily
   navigate between different pages of the
   portfolio.
 
-### Custom Logo (Completed)
+### Custom Logo
 
 - A unique and custom logo is positioned within the navigation bar to enhance
   brand identity.
 
-### Home Page (Completed)
+### Home Page
 
 - The home page greets visitors with a warm welcome message.
 - It also includes a mission statement and links to the About Me page and other
   sections of the portfolio.
 
-### About Me Page (Completed)
+### About Me Page
 
 - This page presents my legal name and a professional head-and-shoulders image.
 - It provides a concise paragraph about who I am, suitable for viewing by
   potential employers.
 
-### Projects Page (Completed)
+### Projects Page
 
 - The Projects page showcases at least three significant projects, both past and
   ongoing.
 - Each project is represented with a relevant image, a brief description of my
   role, and the outcome of the project.
 
-### Services Page (Completed)
+### Services Page
 
 - This page lists the services I offer, such as general programming, web
   development, and mobile application
   development.
 - Accompanied by pertinent images, the presentation is visually appealing.
 
-### Contact Page (Completed)
+### Contact Page
 
 - The Contact page displays my contact information in a distinct panel.
 - It also includes an interactive form for visitors to send messages and provide
@@ -53,6 +53,7 @@ website is built using ExpressJS, with EJS as the templating engine.
 - Although not fully functional, the form captures user information and
   redirects them to the Home Page.
 
+---
 ## Technologies Used
 
 In the construction of this portfolio website, various technologies
@@ -109,9 +110,10 @@ technologies:
   enhancing code quality and understandability.
 
 Through the integration of these technologies, the portfolio website stands as a
-testament to technical proficiency and
-a commitment to high-quality web development standards.
+testament to technical proficiency and a commitment to high-quality web 
+development standards.
 
+---
 ## Final Remarks
 
 All aspects of the assignment have been addressed, ensuring a comprehensive and
