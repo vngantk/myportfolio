@@ -1,0 +1,27 @@
+<%#
+This is the EJS template for the Home page.
+
+Author: Vincent Ngan (Student Number: 301098907)
+Date: 2023-10-01
+File: Home.ejs
+%>
+<%- include('partials/header'); %>
+<div class="container my-4">
+    <h1 class="display-2 fw-bold">Welcome to Vincent Ngan's Portfolio!</h1>
+    <div class="m-4">
+        <img src="./images/VN_Photo.jpeg" alt="Vincent Ngan" width="240" height="240" class="rounded-circle my-2">
+        <p style="width: 240px; text-align: center">Vincent Ngan</p>
+    </div>
+    <md-block>
+        ---
+        ## Innovation Beyond Boundaries
+        I'm Vincent Ngan, a passionate and dedicated Software Developer based in Toronto.
+        With a robust background in Information Technology and a strong passion for web development,
+        I deliver stunning websites and innovative applications
+        that captivate and engage your audience,
+        enhancing their online experience and fostering meaningful connections.
+
+        *Let's create something amazing together!*
+    </md-block>
+</div>
+<%- include('partials/footer'); %>
