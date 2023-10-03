@@ -16,8 +16,8 @@
  * @license MIT
  */
 import express, {Router} from "express";
-import {NextFunction, Request, RequestHandler, Response} from "express-serve-static-core";
-import { marked } from "marked";
+import {Request, RequestHandler, Response} from "express-serve-static-core";
+import {marked} from "marked";
 import outdent from "outdent";
 
 /**
@@ -25,9 +25,17 @@ import outdent from "outdent";
  */
 const router: Router = express.Router();
 
-const markedWithOutdent = (text: TemplateStringsArray) => {
+/**
+ * This is a helper function that wraps the marked.parse() function call to parse the
+ * markdown text. Note that the outdent() function is used to remove the indentation
+ * from the markdown text, so that the markdown text can be indented in the view
+ * template for better readability. This function is parsed to the view rendering
+ * engine as a local variable called 'markdown', so that it can be used in the view template.
+ */
+const markdown = (text: TemplateStringsArray) => {
     return marked.parse(outdent(text));
 }
+
 /**
  * This is a helper function that wraps the res.render() function call to render the appropriate
  * view template. It is used as the RequestHandler for each route.
@@ -37,8 +45,8 @@ const markedWithOutdent = (text: TemplateStringsArray) => {
  * @returns RequestHandler
  */
 function handler(view: string, option: any = {}): RequestHandler {
-    return (req: Request, res: Response, next: NextFunction) => {
-        res.render(view, { marked: markedWithOutdent, path: req.path, ...option });
+    return (req: Request, res: Response) => {
+        res.render(view, { markdown: markdown, path: req.path, ...option });
     }
 }
 

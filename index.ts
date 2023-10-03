@@ -33,14 +33,17 @@ const server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port);
+server.listen(port, () => {
+    console.log(`Server running on port ${port}`)
+});
+
 server.on('error', onError);
 server.on('listening', onListening);
 
 /**
  * Normalize a port into a number, string, or false.
  */
-function normalizePort(val: any) {
+function normalizePort(val: string) {
     const port = parseInt(val, 10);
     if (isNaN(port)) {
         // named pipe

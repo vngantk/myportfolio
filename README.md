@@ -3,8 +3,13 @@
 ## Overview
 
 This repository contains the code for my Personal Portfolio Website, an
-assignment for my course. The
-website is built using ExpressJS, with EJS as the templating engine.
+assignment for my Web Application Development course. The
+website is built using NoteJS and ExpressJS, and with EJS as the templating 
+engine.
+
+Please note that most of the textual contents in this website are fictitious,
+and some of them were even generated using AI. So, they only serve for the purpose 
+of illustration only, and should not be taken literally.
 
 ## Features
 
@@ -25,12 +30,6 @@ website is built using ExpressJS, with EJS as the templating engine.
 - It also includes a mission statement and links to the About Me page and other
   sections of the portfolio.
 
-### About Me Page
-
-- This page presents my legal name and a professional head-and-shoulders image.
-- It provides a concise paragraph about who I am, suitable for viewing by
-  potential employers.
-
 ### Projects Page
 
 - The Projects page showcases at least three significant projects, both past and
@@ -45,6 +44,12 @@ website is built using ExpressJS, with EJS as the templating engine.
   development.
 - Accompanied by pertinent images, the presentation is visually appealing.
 
+### About Me Page
+
+- This page presents my legal name and a professional head-and-shoulders image.
+- It provides a concise paragraph about who I am, suitable for viewing by
+  potential employers.
+
 ### Contact Page
 
 - The Contact page displays my contact information in a distinct panel.
@@ -52,7 +57,6 @@ website is built using ExpressJS, with EJS as the templating engine.
   their contact information.
 - Although not fully functional, the form captures user information and
   redirects them to the Home Page.
-
 
 ## Technologies Used
 
@@ -89,19 +93,14 @@ technologies:
   mobile-friendly and accessible across
   various devices and screen sizes.
 
-### md-block Markdown Library
+### Marked.js
 
-- **Usage**: Employed for writing and formatting the textual parts of the
-  website and other documentation. For mostly
-  textual content, Markdown is more easy and efficient than HTML.
+- **Usage**: For parsing and converting Markdown to HTML. Most of the textual
+  content in the website is written in Markdown for ease of maintenance and
+  modification.
 - **Benefits**: Enhances readability and presentation of documentation, allowing
   for ease of maintenance and
   modification.
-- **Drawbacks**: The md-block library runs on client-side. It renders the
-  Markdown content by doing the conversion on
-  the client-side. This will appear slow to the user. A future improvement would
-  be to use a server-side Markdown
-  library, and render the content on the server-side.
 
 ### TypeScript
 
@@ -110,9 +109,8 @@ technologies:
   enhancing code quality and understandability.
 
 Through the integration of these technologies, the portfolio website stands as a
-testament to technical proficiency and a commitment to high-quality web 
+testament to technical proficiency and a commitment to high-quality web
 development standards.
-
 
 ## Final Remarks
 
