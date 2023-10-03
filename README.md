@@ -4,12 +4,14 @@
 
 This repository contains the code for my Personal Portfolio Website, an
 assignment for my Web Application Development course. The
-website is built using NoteJS and ExpressJS, and with EJS as the templating 
+website is built using Node and Express, and with EJS as the templating 
 engine.
 
 Please note that most of the textual contents in this website are fictitious,
 and some of them were even generated using AI. So, they only serve for the purpose 
 of illustration only, and should not be taken literally.
+
+A live demo of this website is located at [http://zec5umo2.homeunix.net](http://zec5umo2.homeunix.net/).
 
 ## Features
 
